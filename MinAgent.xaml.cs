@@ -19,7 +19,7 @@ namespace Practaka1
     /// </summary>
     public partial class MinAgent : Window
     {
-        public MinAgent(Decimal max)
+        public MinAgent(Decimal max) // метод меняющий несколько элементов
         {
             InitializeComponent();
             TbminAg.Text = max.ToString();

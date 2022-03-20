@@ -36,10 +36,10 @@ namespace Practaka1
            
         }
 
-        List<Product> SpisokFilter = new List<Product>();
+        List<Product> SpisokFilter = new List<Product>(); //список с фильтром
 
-        List<Product> SpisokSeartch = new List<Product>();
-        private void Search_TextChanged(object sender, TextChangedEventArgs e)
+        List<Product> SpisokSeartch = new List<Product>(); //список с поиском
+        private void Search_TextChanged(object sender, TextChangedEventArgs e) //строка для поиска
         {
             if (Search.Text != String.Empty)
             {
@@ -52,7 +52,7 @@ namespace Practaka1
             }
         }
 
-        private void Sort_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void Sort_SelectionChanged(object sender, SelectionChangedEventArgs e) // при изменении КБ обращаемся к фильтру
         {
             FilterSort();
         }
@@ -113,7 +113,7 @@ namespace Practaka1
 
         }
 
-        private void FilterSort()
+        private void FilterSort() //метод фильтра и сортировки
         {
             int filterIndex = Filter.SelectedIndex;
 

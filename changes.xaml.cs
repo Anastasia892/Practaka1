@@ -75,8 +75,6 @@ namespace Practaka1
             }
             Vivod.SelectedValuePath = "ID";
             Vivod.DisplayMemberPath = "Title";
-
-
         }
 
         private void Add_but_Click(object sender, RoutedEventArgs e)
